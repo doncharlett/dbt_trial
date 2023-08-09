@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+    - name: CitiBike
+      description: This is a replica of the Postgres database used by our app
+      database: citibike
+      schema: stage
+      tables:
+          - name: json_weather_data
+            description: One record per hour.
+          - name: trips
+            description: One record per trip.
